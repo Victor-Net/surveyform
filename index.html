@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<header id="header-div">
+    <h1 id="title">
+        Football Quiz.
+    </h1>
+
+    <p id="description">
+        Let us know a little bit about your football.
+    </p>
+    <hr>
+</header>
+
+<body>
+    <form id="survey-form">
+        <div id="personal-info">
+            <div class="personal-info">
+                <label id="name-label" for="name">Name:</label><br>
+                    <input id="name" name="first-name" type="text" placeholder="First Name" required/>
+                    <input id="last-name" name="last-name" type="text" placeholder="Last Name" required/>
+                <br>
+            </div>
+
+            <div class="personal-info">
+                <label id="email-label" for="email">Email:</label><br>
+                    <input id="email" name="email" type="email" placeholder="example@email.com" required/>
+                <br>
+            </div>
+
+            <div class="personal-info">
+                <label id="number-label" for="number">Jersey Number:</label><br>
+                    <input id="number" name="jersey-number" type="number" placeholder="7" min="1" max="99" />
+                <br>
+            </div>
+        </div>
+
+        <div id="world-class">
+            <p>What is your favourite world class league?</p>
+            <select id="dropdown" name="select-league" required>
+                <option disabled selected value>Select League</option>
+                <option value="epl">Epl</option>
+                <option value="la-liga">La Liga</option>
+                <option value="bundesliga">Bundesliga</option>
+                <option value="serie-a">Serie A</option>
+                <option value="fl1">Fl1</option>
+            </select>
+        </div>
+
+        <div id="favourite-player">
+            <p>Who's your favourite player?</p>
+            <input id="name" type="text"/><br>
+        </div>
+
+        <div id="which-league">
+            <p>Which league do they play in?</p>
+                <label>
+                    <input value="epl" type="radio" name="league"/>Epl
+                </label><br>
+                <label>
+                    <input value="la-liga" type="radio" name="league"/>La Liga
+                </label><br>
+                <label>
+                    <input value="bundesliga" type="radio" name="league"/>Bundesliga
+                </label><br>
+                <label>
+                    <input value="serie-a" type="radio" name="league"/>Serie A
+                </label><br>
+                <label>
+                    <input value="fl1" type="radio" name="league"/>Fl1
+                </label><br>
+                <label>
+                    <input value="none" type="radio" name="league"/>None
+                </label><br>
+        </div>
+
+        <div id="world-cup">
+            <p>Have they ever won the World Cup?</p>
+            <label>
+                <input value="yes" type="radio" name="yes-no"/>Yes
+            </label><br>
+            <label for="no">
+                <input value="no" type="radio" name="yes-no"/>No
+            </label><br>
+        </div>
+
+        <div id="checkboxes">
+            <p>
+                Which other major league(s) have they played for?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input type="checkbox" value="epl" name="leagues"/>Epl
+            </label><br>
+            <label>
+                <input type="checkbox" value="la-liga" name="leagues"/>La Liga
+            </label><br>
+            <label>
+                <input type="checkbox" value="bundesliga" name="leagues"/>Bundesliga
+            </label><br>
+            <label>
+                <input type="checkbox" value="serie-a" name="leagues"/>Serie A
+            </label><br>
+            <label>
+                <input type="checkbox" value="fl1" name="leagues"/>Fl1
+            </label><br>
+            <label>
+                <input type="checkbox" value="none" name="leagues"/>None
+            </label><br>
+        </div>
+
+        <div id="additional-info">
+            <p>Additional info goes into the field below:</p>
+                <textarea id="textarea" name="textarea"
+                    style="min-width: 99%; 
+                        max-width: 99%; 
+                        min-height: 100px; 
+                        max-height: 100px;" 
+                    placeholder="Aditional info.">
+                </textarea><br>
+        </div>
+
+        <div id="submit-section">
+        <button id="submit" type="submit">Submit</button>
+        </div>
+
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

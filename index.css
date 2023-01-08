@@ -1,0 +1,102 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+:root{
+    background-color: beige;
+    /* box-sizing: border-box; */
+    color: white;
+    /* scroll-behavior: smooth; */
+    padding: 30px;
+}
+
+#description{
+    padding-bottom: 10px;
+}
+
+header{
+    text-align: center;
+}
+
+hr{
+    margin-bottom: 10px;
+    /* width: 50%; */
+    /* text-align: center;  */
+    /* google how to center a <hr> horizontally */
+}
+
+body{
+    /* background-color: rgb(35, 34, 45); */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+    background-color: rgb(35, 34, 40);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: black;
+    font-size: 16px;
+}
+
+#personal-info{
+    padding-bottom: 0px;
+}
+
+.personal-info{
+    padding-bottom: 10px;
+}
+
+/* trying to remove padding-bottom/margin-bottom under Name label */
+/* .personal-info > #first-name{
+    padding-top: 0px;
+} */
+
+.personal-info > #second-name{
+    margin-top: 10px;
+}
+
+#world-class{
+    padding-bottom: 10px;
+}
+
+#favourite-player{
+    padding-bottom: 10px;
+}
+
+#which-league{
+    padding-bottom: 10px;
+}
+
+label > input{
+    margin-right: 10px;
+}
+
+#world-cup{
+    padding-bottom: 10px;
+}
+
+#checkboxes{
+    padding-bottom: 10px;
+}
+
+#additional-info{
+    padding-bottom: 10px;
+}
+
+#submit-section{
+    padding-bottom: 10px;
+}
+
+#submit-section > button{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgb(35, 34, 35);
+    border-radius: 5px;
+    padding: 6px;
+}
